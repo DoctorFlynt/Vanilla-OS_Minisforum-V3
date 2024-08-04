@@ -19,7 +19,6 @@ stages:
     type: shell
     commands:
     - lpkg --unlock
-    - add-apt-repository ppa:boltgolt/howdy
     - apt-get update
 
   # Put your custom actions behind this comment
@@ -30,7 +29,6 @@ stages:
       packages:
       - vim
       - gnome-tweaks
-      - howdy
 
   - name: example-commands # Sample module demonstrating the Shell module with custom commands
     type: shell
