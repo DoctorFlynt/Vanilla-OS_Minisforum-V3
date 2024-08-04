@@ -1,0 +1,4 @@
+name: install-sh
+type: shell
+commands:
+  - bash /sh/fix-sound.sh
