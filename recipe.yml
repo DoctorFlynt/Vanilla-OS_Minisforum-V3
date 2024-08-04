@@ -36,12 +36,7 @@ stages:
     type: shell
     commands:
     - mkdir -p /etc/libinput
-    - cat <<EOF > "/etc/libinput/local-overrides.quirks"
-        [Minisforum V3 volume keys]
-        MatchName=AT Translated Set 2 keyboard
-        MatchDMIModalias=dmi:*svnMicroComputer(HK)TechLimited:pnV3:*
-        ModelTabletModeNoSuspend=1
-        EOF
+   
 
 
   - name: example-modules # Sample module demonstrating importing local and remote modules
