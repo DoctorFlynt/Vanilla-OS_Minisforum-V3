@@ -34,7 +34,6 @@ stages:
     type: shell
     commands:
      - echo Example output
-     - linux_fix_sound.sh
   
   - name: example-modules # Sample module demonstrating importing local and remote modules
     type: includes
