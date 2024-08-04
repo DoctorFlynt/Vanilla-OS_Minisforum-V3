@@ -1,4 +1,4 @@
-name: Custom Vanilla Desktop # Replace this name with your image name
+name: DoctorFlynt/Vanilla-OS_Minisforum-V3 # Replace this name with your image name
 id: custom # Replace this ID with your image ID
 stages:
 - id: build
