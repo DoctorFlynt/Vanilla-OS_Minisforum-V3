@@ -27,8 +27,9 @@ stages:
     type: apt
     source:
       packages:
-      - vim
       - gnome-tweaks
+      - alsa-tools
+      - alsa-tools-gui
 
   - name: example-commands # Sample module demonstrating the Shell module with custom commands
     type: shell
