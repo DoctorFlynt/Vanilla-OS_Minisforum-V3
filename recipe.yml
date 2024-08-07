@@ -33,17 +33,17 @@ stages:
 
       
   - name: virt-dependencies
-      type: apt
-      source:
-        packages:
-        - qemu-kvm
-        - qemu-system
-        - qemu-utils
-        - libvirt-daemon-system
-        - libvirt-clients
-        - bridge-utils
-        - virt-manager
-        - looking-glass-client
+    type: apt
+    source:
+      packages:
+      - qemu-kvm
+      - qemu-system
+      - qemu-utils
+      - libvirt-daemon-system
+      - libvirt-clients
+      - bridge-utils
+      - virt-manager
+      - looking-glass-client
 
 
   # END custom actions
