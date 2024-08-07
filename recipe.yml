@@ -46,6 +46,7 @@ stages:
       - looking-glass-client
       - swtpm
       - swtpm-tools
+      - edk2-ovmf
 
 
   # END custom actions
