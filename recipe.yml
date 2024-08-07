@@ -30,6 +30,7 @@ stages:
       - gnome-tweaks
       - alsa-tools
       - alsa-tools-gui
+
       
   - name: virt-dependencies
       type: apt
@@ -43,6 +44,9 @@ stages:
         - bridge-utils
         - virt-manager
         - looking-glass-client
+
+
+  # END custom actions
 
   - name: example-commands # Sample module demonstrating the Shell module with custom commands
     type: shell
