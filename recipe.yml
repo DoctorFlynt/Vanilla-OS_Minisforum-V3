@@ -44,6 +44,7 @@ stages:
       - bridge-utils
       - virt-manager
       - looking-glass-client
+      - swtpm
       - swtpm-tools
 
 
