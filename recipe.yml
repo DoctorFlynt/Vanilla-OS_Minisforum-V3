@@ -30,6 +30,7 @@ stages:
       - gnome-tweaks
       - alsa-tools
       - alsa-tools-gui
+      - git
 
       
   - name: virt-dependencies
@@ -46,6 +47,12 @@ stages:
       - looking-glass-client
       - swtpm
       - swtpm-tools
+  
+  - name: winapps
+    type: apt
+    source:
+      packages:
+      - freerdp2-x11
 
 
   # END custom actions
