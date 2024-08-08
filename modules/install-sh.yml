@@ -2,3 +2,4 @@ name: install-sh
 type: shell
 commands:
   - bash /sh/fix-sound.sh
+  - bash /sh/docker.sh
