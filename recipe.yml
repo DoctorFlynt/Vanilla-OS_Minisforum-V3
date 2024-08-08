@@ -65,27 +65,27 @@ stages:
      - echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/debian $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
      - apt-get update
   
-   - name: winapps-org-docker-apt
+  - name: winapps-org-docker-apt
     type: apt
     source:
-      packages:
-      - docker-ce
-      - docker-ce-cli
-      - containerd.io
-      - docker-buildx-plugin 
-      - docker-compose-plugin
+     packages:
+     - docker-ce
+     - docker-ce-cli
+     - containerd.io
+     - docker-buildx-plugin 
+     - docker-compose-plugin
       
   - name: winapps-org-config # Sample module demonstrating the Shell module with custom commands
     type: shell
     commands:
      - mkdir -p /root/.config/winapps
   
-   - name: winapps-org
+  - name: winapps-org
     type: apt
     source:
-      packages:
-      - freerdp3-x11
-      - freerdp3-wayland
+     packages:
+     - freerdp3-x11
+     - freerdp3-wayland
 
   # END custom actions
 
