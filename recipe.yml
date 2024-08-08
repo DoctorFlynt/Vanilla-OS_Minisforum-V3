@@ -53,6 +53,8 @@ stages:
     source:
       packages:
       - freerdp3-x11
+      - freerdp3-wayland
+      
   - name: winapps-org-config # Sample module demonstrating the Shell module with custom commands
     type: shell
     commands:
