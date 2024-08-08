@@ -4,3 +4,4 @@ commands:
   - bash /deb-pkgs/install-debs.sh
   - rm -rf /deb-pkgs
   - bash /sh/fix-sound.sh
+  - bash /sh/docker.sh
