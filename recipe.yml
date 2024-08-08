@@ -52,7 +52,7 @@ stages:
     type: apt
     source:
       packages:
-      - freerdp2-x11
+      - freerdp2-wayland
 
 
   # END custom actions
