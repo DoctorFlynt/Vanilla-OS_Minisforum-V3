@@ -48,12 +48,15 @@ stages:
       - swtpm
       - swtpm-tools
   
-  - name: winapps
+  - name: winapps-org
     type: apt
     source:
       packages:
-      - freerdp2-wayland
-
+      - freerdp3-x11
+  - name: winapps-org-config # Sample module demonstrating the Shell module with custom commands
+    type: shell
+    commands:
+     - mkdir -p /root/.config/winapps
 
   # END custom actions
 
