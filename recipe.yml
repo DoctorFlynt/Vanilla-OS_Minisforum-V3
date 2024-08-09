@@ -30,7 +30,7 @@ stages:
       - gnome-tweaks
       - alsa-tools
       - alsa-tools-gui
-      - cmake
+      - debconf-utils
     
   - name: howdy
     type: apt
@@ -46,6 +46,7 @@ stages:
     commands:
      # - cmake make build-essential libpam0g-dev libinih-dev libevdev-dev python3-dev libopencv-dev
       - dpkg -i --force-confdef /manual-deb-pkgs/howdy_2.6.1.deb 
+      - echo 'b' | debconf-set-selections DEBIAN_FRONTEND="noninteractive" apt install -y /manual-deb-pkgs/howdy_2.6.1.deb 
 
   - name: virt-dependencies
     type: apt
@@ -61,18 +62,11 @@ stages:
       - looking-glass-client
       - swtpm
       - swtpm-tools
-  
-  - name: winapps-org
-    type: apt
-    source:
-      packages:
-      - freerdp3-x11
 
   - name: winapps-org-config 
     type: shell
     commands:
      - mkdir -p /root/.config/winapps
-  
 
   
   - name: example-modules # Sample module demonstrating importing local and remote modules
