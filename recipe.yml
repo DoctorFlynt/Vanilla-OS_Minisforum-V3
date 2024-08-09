@@ -30,7 +30,7 @@ stages:
       - gnome-tweaks
       - alsa-tools
       - alsa-tools-gui
-      - git
+      - cmake
     
   - name: howdy
     type: apt
