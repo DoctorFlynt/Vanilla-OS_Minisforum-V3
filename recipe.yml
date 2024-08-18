@@ -28,8 +28,8 @@ stages:
     source:
       packages:
       - gnome-tweaks
-      - alsa-tools
-      - alsa-tools-gui
+    #  - alsa-tools
+    #  - alsa-tools-gui
     #  - debconf-utils
     
   - name: howdy
