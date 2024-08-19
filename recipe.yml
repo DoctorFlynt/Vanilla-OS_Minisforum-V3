@@ -67,7 +67,13 @@ stages:
     type: shell
     commands:
      - mkdir -p /root/.config/winapps
-
+    
+  - name: tesseract
+    type: apt
+    source:
+      packages:
+        - tesseract-ocr
+        
   
   - name: example-modules # Sample module demonstrating importing local and remote modules
     type: includes
