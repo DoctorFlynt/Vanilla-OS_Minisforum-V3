@@ -29,6 +29,7 @@ stages:
       packages:
       - gnome-tweaks
       - gnome-screenshot
+      - xclip
     #  - alsa-tools
     #  - alsa-tools-gui
     #  - debconf-utils
