@@ -75,6 +75,7 @@ stages:
     source:
       packages:
         - tesseract-ocr
+        - tesseract-ocr-deu
         
   
   - name: example-modules # Sample module demonstrating importing local and remote modules
