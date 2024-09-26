@@ -3,4 +3,3 @@ type: shell
 commands:
   - bash /sh/fix-sound.sh
   - bash /sh/docker.sh
-  - yes y | bash /sh/linux-brprinter-installer-2.2.4-1 MFC-L3730CDN
