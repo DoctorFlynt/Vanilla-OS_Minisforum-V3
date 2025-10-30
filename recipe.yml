@@ -30,6 +30,7 @@ stages:
      # - gnome-tweaks
       - gnome-screenshot
       - xclip
+      - firefox
     #  - alsa-tools 
     #  - alsa-tools-gui
     #  - debconf-utils
