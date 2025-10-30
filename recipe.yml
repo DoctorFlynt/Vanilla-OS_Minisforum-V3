@@ -50,25 +50,25 @@ stages:
  #     - dpkg -i --force-confdef /manual-deb-pkgs/howdy_2.6.1.deb 
  #     - echo 'prof b' | debconf-set-selections DEBIAN_FRONTEND="noninteractive" apt install -y /manual-deb-pkgs/howdy_2.6.1.deb 
 
-  - name: virt-dependencies
-    type: apt
-    source:
-      packages:
-      - qemu-kvm
-      - qemu-system
-      - qemu-utils
-      - libvirt-daemon-system
-      - libvirt-clients
-      - bridge-utils
-      - virt-manager
-      - looking-glass-client
-      - swtpm
-      - swtpm-tools
+#  - name: virt-dependencies
+ #   type: apt
+ #   source:
+   #   packages:
+  #    - qemu-kvm
+  #    - qemu-system
+  #    - qemu-utils
+   #   - libvirt-daemon-system
+  #    - libvirt-clients
+  #    - bridge-utils
+  #    - virt-manager
+   #   - looking-glass-client
+   #   - swtpm
+   #   - swtpm-tools
 
-  - name: winapps-org-config 
-    type: shell
-    commands:
-     - mkdir -p /root/.config/winapps
+#  - name: winapps-org-config 
+ #   type: shell
+  #  commands:
+   #  - mkdir -p /root/.config/winapps
     
   - name: tesseract
     type: apt
