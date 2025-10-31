@@ -32,17 +32,10 @@ stages:
       - xclip
       - firefox
       - alsa-tools 
-      - software-properties-common
-      - apt-transport-https
     #  - alsa-tools-gui
     #  - debconf-utils
     
-  - name: steam-packages # Sample module using the built-in Apt module to install packages
-    type: apt
-    source:
-      packages:
-      - steam-installer
-      - steam-devices
+
   #- name: howdy
   #  type: apt
   #  source:
