@@ -34,20 +34,6 @@ stages:
       - alsa-tools 
     #  - alsa-tools-gui
     #  - debconf-utils
-    
-  - name: steam-setup
-    type: shell
-    commands:
-    - dpkg --add-architecture i386
-    - apt-get update
-    
-  - name: steam-apt # Sample module using the built-in Apt module to install packages
-    type: apt
-    source:
-      packages:
-      - steam-libs-i386
-      - steam-installer
-      - steam-devices
       
   #- name: howdy
   #  type: apt
