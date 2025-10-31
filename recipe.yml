@@ -32,6 +32,7 @@ stages:
       - xclip
       - firefox
       - alsa-tools 
+      - steam
     #  - alsa-tools-gui
     #  - debconf-utils
     
