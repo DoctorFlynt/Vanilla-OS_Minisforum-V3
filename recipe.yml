@@ -45,6 +45,7 @@ stages:
     type: apt
     source:
       packages:
+      - steam-libs-i386
       - steam-installer
       - steam-devices
       
