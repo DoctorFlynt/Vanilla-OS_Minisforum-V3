@@ -3,3 +3,5 @@ type: shell
 commands:
   - bash /sh/fix-sound.sh
   - bash /sh/docker.sh
+  - cp /sh/analog-output.conf.common /usr/share/alsa-card-profile/mixer/paths/analog-output.conf.common
+  - cp /sh/analog-output-headphones.conf /usr/share/alsa-card-profile/mixer/paths/analog-output-headphones.conf
